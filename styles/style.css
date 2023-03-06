@@ -1,0 +1,19 @@
+:root {
+    --cor-principal: #2E7BA2;
+    --cor-principal-hover: #519EC5;
+    --cor-gradiente: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    --cor-rodape: #FACF9D;
+    --cor-fonte: #444444;
+    --cor-fonte-branco: #FFFFFF;
+    --cor-tarja: #DF9010;
+    --font-titulo: 'Calistoga', cursive;
+    --font-texto: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--cor-fonte);
+    font-family: var(--font-texto);
+    font-weight: 400;
+}

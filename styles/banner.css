@@ -1,0 +1,59 @@
+.banner {
+    background-color: #BFDAE6;
+    background-image: url('../assets/img/home/banner.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__titulo {
+    font-family: var(--font-titulo);
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* EXPERIENCIA */
+.banner--experiencia {
+    background-image: url('../assets/img/experiencia/banner.png');
+}
+
+/* SETORES */
+.banner--setores {
+    background-image: url('../assets/img/setores/banner.png');
+}
+
+@media (min-width: 768px) {
+    .banner {
+        background-image: url('../assets/img/home/banner_tablet.png');
+        height: 384px;
+    }
+
+    .banner__titulo {
+        font-size: 4rem;
+    }
+
+    /* EXPERIENCIA */
+    .banner--experiencia {
+        background-image: url('../assets/img/experiencia/banner_tablet.png');
+        height: 384px;
+    }
+
+}
+
+@media (min-width:1440px) {
+    .banner {
+        background-image: url('../assets/img/home/banner_desktop.png');
+    }
+
+    .banner__titulo {
+        width: 600px;
+    }
+
+    /* EXPERIENCIA */
+    .banner--experiencia {
+        background-image: url('../assets/img/experiencia/banner__desktop.png');
+    }
+}

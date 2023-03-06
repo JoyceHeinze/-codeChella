@@ -1,0 +1,143 @@
+.bandas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+}
+
+.bandas__titulo {
+    font-family: var(--font-titulo);
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.bandas__titulo::before {
+    content: "/";
+}
+
+.bandas__titulo::after {
+    content: "/";
+}
+
+.bandas__data {
+    padding: 1rem;
+}
+
+.bandas__data,
+.bandas__data--marcador {
+    font-size: 2rem;
+    font-family: var(--font-titulo);
+    color: var(--cor-fonte-branco);
+    background: var(--cor-tarja);
+    white-space: nowrap;
+}
+
+.bandas__data--marcador::before {
+    content: " < ";
+}
+
+.bandas__data--marcador::after {
+    content: " > ";
+}
+
+.bandas__lista,
+.bandas__lista2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+    list-style: none;
+}
+
+.bandas__categoria--divisao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bandas__item {
+    text-align: center;
+}
+
+.bandas__item--grande {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.bandas__item--medio {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.bandas__item--pequeno {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.bandas__item--pequeno-simples {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.bandas__imagem {
+    background-image: url('../assets/img/home/publico2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    min-height: 338px;
+}
+
+@media (min-width:768px) {
+    .bandas__titulo {
+        font-size: 4rem;
+    }
+
+    .bandas__datas-linha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .bandas__data--linha {
+        display: block;
+        border: 1px solid var(--cor-tarja);
+        width: 10vw;
+    }
+
+    .bandas__data,
+    .bandas__data--marcador {
+        font-size: 3rem;
+    }
+
+    .bandas__lista {
+        padding: 1rem 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .bandas__lista2 {
+        padding: 1rem 0;
+    }
+
+    .bandas__categoria--divisao {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bandas__imagem {
+        background-image: url('../assets/img/home/publico2_tablet.png');
+    }
+}
+
+@media (min-width: 1440px) {
+    .bandas__data--linha {
+        width: 25vw;
+    }
+
+    .bandas__imagem {
+        background-image: url('../assets/img/home/publico2_desktop.png');
+    }
+}
