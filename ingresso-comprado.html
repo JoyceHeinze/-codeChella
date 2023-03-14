@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella</title>
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cabecalho.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/ingresso-comprado.css">
+    <link rel="stylesheet" href="styles/rodape.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="assets/img/logo_branca.svg" alt="Logotipo do CodeChella"></a>
+        <input type="checkbox" id="menu" class="cabecalho__menu--selecao">
+        <label for="menu" class="cabecalho__menu--area">
+            <img src="assets/img/menu.svg" class="cabecalho__menu" alt="menu">
+        </label>
+        <nav class="cabecalho__navegacao">
+            <ul class=" cabecalho__lista">
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="experiencia.html"
+                        class="cabecalho__link">A experiência</a>
+                </li>
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="setores.html"
+                        class="cabecalho__link">Mapa de Setores</li></a>
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="informacoes-gerais.html"
+                        class="cabecalho__link">Informações</li></a>
+                <li class="cabecalho__lista-item"><a href="ingresso.html" class="cabecalho__link">Ingresso</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <span class="banner__imagem banner__imagem--ingresso-comprado"></span>
+            <h1 class="banner__titulo banner__titulo--ingresso-comprado">Seu ingresso está aqui!</h1>
+        </div>
+        <div class="fundo">
+            <h2 class="ingresso-comprado__titulo">Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do
+                evento e divirta-se!</h2>
+            <section class="card__ingresso-comprado">
+                <div class="card__ingresso-comprado--imagens">
+                    <img src="assets/img/logo_preta.svg" class="card__imagem--logo">
+                    <img src="assets/img/icon-branco.png" class="card__imagem--icone">
+                </div>
+                <div class="card__qr-code--texto">
+                    <img src="assets/img/ingresso/ingresso-comprado/qr-code.png" class="card__imagem--qr-code">
+                    <div class="card__ingresso-comprado--textos">
+                        <h3 class="ingresso-comprado__titulo card-ingresso-comprado__titulo">Joyce Heinze</h3>
+                        <p class="card__ingresso-comprado--texto">Ingresso Costesia</p>
+                        <p class="card__ingresso-comprado--texto">Setor Pista</p>
+                        <p class="card__ingresso-comprado--texto">Data: 11/03</p>
+                        <p class="card__ingresso-comprado--texto">Local: São Paulo-SP</p>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__logo--redes">
+            <img src="assets/img/logo_preta.svg" class="rodape__logo" alt="Logotipo do CodeChella">
+            <div class="rodape__texto--redes">
+                <h4 class="rodape__texto">Acesse nossas redes:</h4>
+                <div class="rodape__redes">
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/whatsapp.svg" alt="Whatsapp"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/mensagem.svg" alt="Mensagem"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/instagram.svg" alt="Instragram"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="rodape__texto rodape__texto--direita">Desenvolvido por <a
+                    href="https://github.com/JoyceHeinze">Joyce
+                    Heinze</a>. Design por Alura.</p>
+            <p class="rodape__texto rodape__texto--direita">Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

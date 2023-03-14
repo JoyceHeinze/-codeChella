@@ -1,12 +1,24 @@
 .banner {
-    background-color: #BFDAE6;
-    background-image: url('../assets/img/home/banner.png');
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    height: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    min-height: 270px;
+}
+
+.banner__imagem {
+    position: absolute;
+    background-color: #BFDAE6;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.banner__imagem--home {
+    background-image: url('../assets/img/home/banner.jfif');
 }
 
 .banner__titulo {
@@ -16,44 +28,65 @@
 }
 
 /* EXPERIENCIA */
-.banner--experiencia {
-    background-image: url('../assets/img/experiencia/banner.png');
+.banner__imagem--experiencia {
+    background-image: url('../assets/img/experiencia/banner.jfif');
+    background-blend-mode: multiply;
 }
 
 /* SETORES */
-.banner--setores {
-    background-image: url('../assets/img/setores/banner.png');
+.banner__imagem--setores {
+    background-image: url('../assets/img/setores/banner.jfif');
+    background-position: bottom;
+    background-blend-mode: multiply;
+    top: -400px;
+    padding-bottom: 400px;
+    left: -120px;
+    padding-right: 120px;
+}
+
+/* INFORMAÇÕES GERAIS */
+.banner__imagem--informacoes-gerais {
+    background-image: url('../assets/img/informacoes-gerais/banner.jfif');
+    background-blend-mode: multiply;
+}
+
+/* INGRESSO */
+.banner__imagem--ingresso {
+    background-image: url('../assets/img/ingresso/banner.jfif');
+    background-blend-mode: multiply;
+}
+
+/* INGRESSO COMPRADO */
+.banner__imagem--ingresso-comprado {
+    background-image: url('../assets/img/ingresso/ingresso-comprado/banner.jfif');
+    background-blend-mode: multiply;
+}
+
+.banner__titulo--ingresso-comprado {
+    width: 312px;
 }
 
 @media (min-width: 768px) {
     .banner {
-        background-image: url('../assets/img/home/banner_tablet.png');
-        height: 384px;
+        min-height: 384px;
     }
 
     .banner__titulo {
         font-size: 4rem;
     }
-
-    /* EXPERIENCIA */
-    .banner--experiencia {
-        background-image: url('../assets/img/experiencia/banner_tablet.png');
-        height: 384px;
-    }
-
 }
 
 @media (min-width:1440px) {
     .banner {
-        background-image: url('../assets/img/home/banner_desktop.png');
+        min-height: 407px;
     }
 
     .banner__titulo {
         width: 600px;
     }
 
-    /* EXPERIENCIA */
-    .banner--experiencia {
-        background-image: url('../assets/img/experiencia/banner__desktop.png');
+    /* INFORMAÇÕES GERAIS */
+    .banner__imagem--informacoes-gerais {
+        background-position-y: -330px;
     }
 }

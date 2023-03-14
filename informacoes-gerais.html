@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella</title>
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cabecalho.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/perguntas-frequentes.css">
+    <link rel="stylesheet" href="styles/rodape.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="assets/img/logo_branca.svg" alt="Logotipo do CodeChella"></a>
+        <input type="checkbox" id="menu" class="cabecalho__menu--selecao">
+        <label for="menu" class="cabecalho__menu--area">
+            <img src="assets/img/menu.svg" class="cabecalho__menu" alt="menu">
+        </label>
+        <nav class="cabecalho__navegacao">
+            <ul class=" cabecalho__lista">
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="experiencia.html"
+                        class="cabecalho__link">A experiência</a>
+                </li>
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="setores.html"
+                        class="cabecalho__link">Mapa de Setores</li></a>
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="informacoes-gerais.html"
+                        class="cabecalho__link">Informações</li></a>
+                <li class="cabecalho__lista-item"><a href="ingresso.html" class="cabecalho__link">Ingresso</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <span class="banner__imagem banner__imagem--informacoes-gerais"></span>
+            <h1 class="banner__titulo">Informações Gerais</h1>
+        </div>
+        <div class="fundo">
+            <section class="perguntas">
+                <h2 class="perguntas__titulo">Perguntas Frequentes:</h2>
+                <div class="perguntas-frequentes"> 
+                    <button class="perguntas-frequentes__botao">Quais serão as atrações?</button>
+                    <p class="perguntas-frequentes__resposta">Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop.<a href="index.html">Confira o line-up em detalhes clicando neste link!</a></p>
+                </div>
+                <div class="perguntas-frequentes">
+                    <button class="perguntas-frequentes__botao">Qual é a classificação etária?</button>
+                    <p class="perguntas-frequentes__resposta">A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais ou responsáveis legais. Menores de 10 anos não podem entrar.</p>
+                </div>
+                <div class="perguntas-frequentes">
+                    <button class="perguntas-frequentes__botao">Quais são os setores disponíveis?</button>
+                    <ul class="perguntas-frequentes__lista">
+                        <li class="perguntas-frequentes__lista--item">Pista Premium</li>
+                        <li class="perguntas-frequentes__lista--item">Pista Comum</li>
+                        <li class="perguntas-frequentes__lista--item">Cadeiras térreo</li>
+                        <li class="perguntas-frequentes__lista--item">Cadeiras superiores</li>
+                        <li class="perguntas-frequentes__lista--item">Rampas</li>
+                    </ul>
+                </div>
+                <div class="perguntas-frequentes">
+                    <button class="perguntas-frequentes__botao">Quais são os itens proibidos?</button>
+                    <p class="perguntas-frequentes__resposta">Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, capacetes, cadeiras ou bancos, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, substâncias inflamáveis, cigarro eletrônico, corrosivas e ou tóxicas, revistas, jornais, livros e copo térmico ou similares.</p>
+                </div>
+                <div class="perguntas-frequentes">
+                    <button class="perguntas-frequentes__botao">Quem tem direito a meia-entrada?</button>
+                    <p class="perguntas-frequentes__resposta">De acordo com a Lei Federal, têm direito ao benefício da meia-entrada aqueles que preencherem os requisitos e apresentarem os documentos comprobatórios.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__logo--redes">
+            <img src="assets/img/logo_preta.svg" class="rodape__logo" alt="Logotipo do CodeChella">
+            <div class="rodape__texto--redes">
+                <h4 class="rodape__texto">Acesse nossas redes:</h4>
+                <div class="rodape__redes">
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/whatsapp.svg" alt="Whatsapp"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/mensagem.svg" alt="Mensagem"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/instagram.svg" alt="Instragram"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="rodape__texto rodape__texto--direita">Desenvolvido por <a
+                    href="https://github.com/JoyceHeinze">Joyce
+                    Heinze</a>. Design por Alura.</p>
+            <p class="rodape__texto rodape__texto--direita">Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+.fundo {
+    background: var(--cor-gradiente);
+    padding-bottom: 3rem;
+}
+
+.card__ingresso-comprado {
+    background: var(--cor-gradiente);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    row-gap: 2rem;
+    border: none;
+    box-shadow: 4px 4px 8px 0px var(--cor-fonte);
+}
+
+.ingresso-comprado__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+    padding: 4rem 1.5rem
+}
+
+.card-ingresso-comprado__titulo {
+    padding: 0 0 1rem 0;
+}
+
+.card__ingresso-comprado--imagens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__imagem--logo {
+    height: 32px;
+}
+
+.card__imagem--icone {
+    height: 32px;
+}
+
+.card__qr-code--texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__imagem--qr-code {
+    height: 190px;
+    align-self: center;
+}
+
+.card__ingresso-comprado--texto {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+}
+
+@media (min-width:768px) {
+    .banner__titulo--ingresso-comprado {
+        width: 100%;
+    }
+
+    .ingresso-comprado__titulo {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .card-ingresso-comprado__titulo {
+        width: 100%;
+    }
+
+    .card__imagem--qr-code {
+        height: 310px;
+    }
+}
+
+@media (min-width:1440px) {  
+    .ingresso-comprado__titulo, .card__ingresso-comprado {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .card__qr-code--texto {
+        flex-direction: row;
+        column-gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    .card__imagem--qr-code {
+        height: 222px;
+    }
+
+    .card-ingresso-comprado__titulo {
+        width: 100%;
+    }
+
+    .card-ingresso-comprado__titulo, .card__ingresso-comprado--texto {
+        display: flex;
+        align-items: flex-start;
+    }
+}

@@ -7,16 +7,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
 }
 
 .informacoes__imagem {
+    display: block;
     border-radius: 1rem;
-    background-image: url('../assets/img/home/publico.png');
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     width: 85vw;
     min-height: 381px;
+}
+
+.informacoes__imagem--home {
+    background-image: url('../assets/img/home/publico.jfif');
 }
 
 .informacoes__descricao {
@@ -27,19 +31,10 @@
     padding: 2rem 0;
 }
 
-.informacoes__tiulo,
-.informacoes__tiulo--marcador {
+.informacoes__tiulo {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-}
-
-.informacoes__tiulo--marcador::before {
-    content: " < ";
-}
-
-.informacoes__tiulo--marcador::after {
-    content: " > ";
 }
 
 .informacoes__texto {
@@ -73,15 +68,15 @@
 }
 
 .informacoes__imagem--experiencia {
-    background-image: url('../assets/img/experiencia/acessibilidade.png');
+    background-image: url('../assets/img/experiencia/acessibilidade-inclusao.jfif');
 }
 
 .informacoes__imagem--experiencia2 {
-    background-image: url('../assets/img/experiencia/sustentabilidade.png');
+    background-image: url('../assets/img/experiencia/sustentabilidade.jfif');
 }
 
 .informacoes__imagem--experiencia3 {
-    background-image: url('../assets/img/experiencia/atracoes.png');
+    background-image: url('../assets/img/experiencia/atracoes.jfif');
 }
 
 .informacoes__descricao--experiencia,
@@ -101,12 +96,7 @@
 }
 
 .informacoes__imagem--setores {
-    background-image: none;
-}
-
-.informacoes__imagem--setores-tablet,
-.informacoes__imagem--setores-desktop {
-    display: none;
+    width: 100%;
 }
 
 .informacoes__lista-item--setores {
@@ -177,24 +167,21 @@
 }
 
 .informacoes__imagem--setores-pista {
-    background-image: url('../assets/img/setores/setores_pista.png');
+    background-image: url('../assets/img/setores/pista.jfif');
     min-height: 239px;
 }
 
 .informacoes__imagem--setores-premium {
-    background-image: url('../assets/img/setores/setores_premium.png');
+    background-image: url('../assets/img/setores/pista_premium.jfif');
     min-height: 239px;
 }
 
 .informacoes__imagem--setores-cadeiras {
-    background-image: url('../assets/img/setores/setores_cadeiras.png');
+    background-image: url('../assets/img/setores/cadeiras.jfif');
     min-height: 239px;
 }
 
 @media (min-width:768px) {
-    .informacoes__imagem {
-        background-image: url('../assets/img/home/publico_tablet_desktop.png');
-    }
 
     /* EXPERIENCIA */
     .experiencia--direita,
@@ -205,15 +192,7 @@
     }
 
     .informacoes__imagem--experiencia {
-        background-image: url('../assets/img/experiencia/acessibilidade_tablet_desktop.png');
-    }
-
-    .informacoes__imagem--experiencia2 {
-        background-image: url('../assets/img/experiencia/sustentabilidade_tablet_desktop.png');
-    }
-
-    .informacoes__imagem--experiencia3 {
-        background-image: url('../assets/img/experiencia/atracoes_tablet_desktop.png');
+        background-position-y: -100px;
     }
 
     .informacoes__descricao--experiencia,
@@ -222,20 +201,12 @@
     }
 
     /* SETORES */
-    .banner--setores {
-        background-image: url('../assets/img/setores/banner-tablet.png');
-    }
-
     .setores--imagem-informacoes {
         padding-bottom: 2rem;
     }
 
     .informacoes__imagem--setores {
-        display: none;
-    }
-
-    .informacoes__imagem--setores-tablet {
-        display: flex;
+        width: 60%;
     }
 
     .informacoes__lista--titulo {
@@ -244,18 +215,6 @@
 
     .informacoes__item--setores {
         font-size: 1.25rem;
-    }
-
-    .informacoes__imagem--setores-pista {
-        background-image: url('../assets/img/setores/setores_pista.png');
-    }
-
-    .informacoes__imagem--setores-premium {
-        background-image: url('../assets/img/setores/setores_premium-tablet-desktop.png');
-    }
-
-    .informacoes__imagem--setores-cadeiras {
-        background-image: url('../assets/img/setores/setores_cadeiras-tablet-desktop.png');
     }
 
     .informacoes__tiulo--setores {
@@ -273,7 +232,7 @@
         padding: 4rem 7.5rem;
     }
 
-    .informacoes__imagem {
+    .informacoes__imagem--home {
         width: 609px;
     }
 
@@ -325,10 +284,6 @@
     }
 
     /* SETORES */
-    .banner--setores {
-        background-image: url('../assets/img/setores/banner-desktop.png');
-    }
-
     .informacoes--setores {
         padding: 2rem 7.5rem;
     }
@@ -337,12 +292,8 @@
         flex-direction: row;
     }
 
-    .informacoes__imagem--setores-tablet {
-        display: none;
-    }
-
-    .informacoes__imagem--setores-desktop {
-        display: flex;
+    .informacoes__imagem--setores {
+        width: 100%;
     }
 
     .informacoes--setores-detalhes {
@@ -360,5 +311,4 @@
     .setores--parte-inferior {
         align-self: flex-end;
     }
-
 }

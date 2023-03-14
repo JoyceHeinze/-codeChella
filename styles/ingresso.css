@@ -1,0 +1,147 @@
+.fundo {
+    background: var(--cor-gradiente);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: .5rem;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.formulario__titulo {
+    font-family: var(--font-titulo);
+    font-size: 2rem;
+    line-height: 41.6px;
+    text-align: center;
+}
+
+.formulario__descricao {
+    font-size: 1.5rem;
+    font-weight: 700;
+    align-self: flex-start;
+    padding-top: 1.5rem;
+}
+
+.formulario__area-resposta {
+    width: -webkit-fill-available;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    height: 3rem;
+    border: none;
+    margin: 0 auto;
+    left: 5%;
+}
+
+.formulario__area-resposta--selecao {
+    appearance: none;
+    background-image: url('../assets/img/ingresso/arrow_drop_down.png');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
+
+.formulario--divisao {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario--divisao-interno {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.formulario__descricao--divisao {
+    padding-bottom: .5rem;
+}
+
+.formulario__botao {
+    display: flex;
+    background-color: var(--cor-principal);
+    color: var(--cor-fonte-branco);
+    font-size: 1.25rem;
+    padding: 1.1rem 1.8rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 4px 4px var(--cor-fonte);
+    margin-top: 1.5rem;
+    text-decoration: none;
+}
+
+.formulario__botao::after {
+    content: url('../assets/img/ingresso/seta.svg');
+    padding-left: 1rem;
+}
+
+@media (min-width:768px) {
+    .formulario__titulo {
+        font-size: 2.5rem;
+        margin: 2rem auto 1rem auto;
+    }
+
+    .formulario__descricao {
+        font-size: 1.8rem;
+    }
+
+    .formulario__area-resposta,
+    .formulario__descricao {
+        margin: 0 8%;
+    }
+
+    .formulario__area-resposta-data {
+        margin-right: 60%;
+    }
+
+    .formulario__botao {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width:1440px) {
+    .formulario {
+        padding: 2.5rem 1.5rem 0 1.5rem;
+    }
+
+    .formulario__titulo {
+        font-size: 3rem;
+    }
+
+    .formulario__descricao {
+        font-size: 2rem;
+    }    
+    
+    .formulario--divisao {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 1.5rem;
+    }
+
+    .formulario--divisao-interno {
+        width: auto;
+        align-items: center;
+        width: 29.2%;
+    }
+
+    .formulario__area-resposta--selecao, .formulario__area-resposta-data {
+        margin: 0;
+        align-self: flex-start;
+    }
+
+    .formulario__area-resposta, .formulario__descricao {
+        margin: 0 20%;
+    }
+
+    .formulario__descricao--dupla {
+        margin: 0;
+    }
+
+    .formulario__botao {
+        margin-top: 3rem;
+    }
+}

@@ -1,6 +1,7 @@
 :root {
     --cor-principal: #2E7BA2;
     --cor-principal-hover: #519EC5;
+    --cor-fundo-perguntas: #C8DEEF;
     --cor-gradiente: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
     --cor-rodape: #FACF9D;
     --cor-fonte: #444444;

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella</title>
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cabecalho.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/ingresso.css">
+    <link rel="stylesheet" href="styles/rodape.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="assets/img/logo_branca.svg" alt="Logotipo do CodeChella"></a>
+        <input type="checkbox" id="menu" class="cabecalho__menu--selecao">
+        <label for="menu" class="cabecalho__menu--area">
+            <img src="assets/img/menu.svg" class="cabecalho__menu" alt="menu">
+        </label>
+        <nav class="cabecalho__navegacao">
+            <ul class=" cabecalho__lista">
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="experiencia.html"
+                        class="cabecalho__link">A experiência</a>
+                </li>
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="setores.html"
+                        class="cabecalho__link">Mapa de Setores</li></a>
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="informacoes-gerais.html"
+                        class="cabecalho__link">Informações</li></a>
+                <li class="cabecalho__lista-item"><a href="ingresso.html" class="cabecalho__link">Ingresso</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <span class="banner__imagem banner__imagem--ingresso"></span>
+            <h1 class="banner__titulo">Garanta seu Ingresso</h1>
+        </div>
+        <div class="fundo">
+            <form class="formulario">
+                <legend class="formulario__titulo">Preencha o formulário a seguir:</legend>
+                <label for="nome-completo" class="formulario__descricao">Nome completo:</label>
+                <input type="text" id="nome-completo" class="formulario__area-resposta"
+                    placeholder="Nome sem abreviações">
+                <label for="email" class="formulario__descricao">E-mail:</label>
+                <input type="email" id="email" class="formulario__area-resposta" placeholder="exemplo@provedor.com">
+                <fieldset class="formulario--divisao">
+                    <fieldset class="formulario--divisao-interno">
+                        <legend class="formulario__descricao formulario__descricao--divisao formulario__descricao--dupla">Tipo de Ingresso:</legend>
+                        <select class="formulario__area-resposta formulario__area-resposta--selecao formulario__descricao--dupla">
+                            <option>Tipo de Ingresso</option>
+                            <option>Pista Premium</option>
+                            <option>Pista Comum</option>
+                            <option>Cadeiras Térreo</option>
+                            <option>Cadeiras Superiores</option>
+                            <option>Rampas</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="formulario--divisao-interno">
+                        <label for="data-nascimento" class="formulario__descricao formulario__descricao--dupla">Data de nascimento:</label>
+                        <input type="date" id="data-nascimento"
+                            class="formulario__area-resposta formulario__area-resposta-data formulario__descricao--dupla">
+                    </fieldset>
+                </fieldset>
+                <a href=ingresso-comprado.html class="formulario__botao">Avançar</a>
+            </form>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__logo--redes">
+            <img src="assets/img/logo_preta.svg" class="rodape__logo" alt="Logotipo do CodeChella">
+            <div class="rodape__texto--redes">
+                <h4 class="rodape__texto">Acesse nossas redes:</h4>
+                <div class="rodape__redes">
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/whatsapp.svg" alt="Whatsapp"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/mensagem.svg" alt="Mensagem"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/instagram.svg" alt="Instragram"></a>
+                    <a href="#" class="rodape__redes--botao"><img src="assets/img/twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="rodape__texto rodape__texto--direita">Desenvolvido por <a
+                    href="https://github.com/JoyceHeinze">Joyce
+                    Heinze</a>. Design por Alura.</p>
+            <p class="rodape__texto rodape__texto--direita">Projeto fictício sem fins comerciais.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

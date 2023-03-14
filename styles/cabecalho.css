@@ -6,16 +6,16 @@
     position: relative;
 }
 
+.cabecalho__menu--selecao {
+    display: none;
+}
+
 .cabecalho__menu--area {
     display: flex;
 }
 
 .cabecalho__menu {
     align-self: center;
-}
-
-.cabecalho__menu--selecao {
-    display: none;
 }
 
 .cabecalho__navegacao {
@@ -25,6 +25,7 @@
     background: var(--cor-principal);
     padding: 16px;
     display: none;
+    z-index: 1;
 }
 
 .cabecalho__menu--selecao:checked~.cabecalho__navegacao {

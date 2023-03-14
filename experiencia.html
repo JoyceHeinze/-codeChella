@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeChella</title>
+    <link rel="icon" href="assets/img/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700;800&display=swap"
@@ -14,16 +15,14 @@
     <link rel="stylesheet" href="styles/cabecalho.css">
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/informacoes.css">
-    <link rel="stylesheet" href="styles/bandas.css">
     <link rel="stylesheet" href="styles/rodape.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <a href="index.html" class="cabecalho__logo"><img src="assets/img/logo_branca.svg" class="cabecalho__logo"
-                alt="Logotipo do CodeChella"></a>
+        <a href="index.html"><img src="assets/img/logo_branca.svg" alt="Logotipo do CodeChella"></a>
         <input type="checkbox" id="menu" class="cabecalho__menu--selecao">
-        <label for="menu" class="cabecalho__menu--area" alt="menu">
+        <label for="menu" class="cabecalho__menu--area">
             <img src="assets/img/menu.svg" class="cabecalho__menu" alt="menu">
         </label>
         <nav class="cabecalho__navegacao">
@@ -33,21 +32,22 @@
                 </li>
                 <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="setores.html"
                         class="cabecalho__link">Mapa de Setores</li></a>
-                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="#"
+                <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="informacoes-gerais.html"
                         class="cabecalho__link">Informações</li></a>
-                <li class="cabecalho__lista-item"><a href="#" class="cabecalho__link">Ingresso</li></a>
+                <li class="cabecalho__lista-item"><a href="ingresso.html" class="cabecalho__link">Ingresso</li></a>
             </ul>
         </nav>
     </header>
 
     <main>
-        <nav class="banner banner--experiencia">
+        <div class="banner">
+            <span class="banner__imagem banner__imagem--experiencia"></span>
             <h1 class="banner__titulo">A Experiência</h1>
-        </nav>
+        </div>
         <div class="fundo">
             <section class="informacoes informacoes--experiencia">
                 <div class="experiencia--direita">
-                    <div class="informacoes__imagem informacoes__imagem--experiencia"></div>
+                    <span class="informacoes__imagem informacoes__imagem--experiencia"></span>
                     <div class="informacoes__descricao informacoes__descricao--experiencia">
                         <h2 class="informacoes__tiulo informacoes__tiulo--experiencia">Acessibilidade e Inclusão</h2>
                         <p class="informacoes__texto informacoes__texto--experiencia">Nosso evento tenta abraçar um
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="experiencia--esquerda">
-                    <div class="informacoes__imagem informacoes__imagem--experiencia2"></div>
+                    <span class="informacoes__imagem informacoes__imagem--experiencia2"></span>
                     <div class="informacoes__descricao informacoes__descricao--experiencia-esquerda">
                         <h2
                             class="informacoes__tiulo informacoes__tiulo--experiencia informacoes__tiulo--experiencia--esquerda">
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="experiencia--direita">
-                    <div class="informacoes__imagem informacoes__imagem--experiencia3"></div>
+                    <span class="informacoes__imagem informacoes__imagem--experiencia3"></span>
                     <div class="informacoes__descricao informacoes__descricao--experiencia">
                         <h2 class="informacoes__tiulo informacoes__tiulo--experiencia">Atrações</h2>
                         <p class="informacoes__texto informacoes__texto--experiencia">Intervenções artísticas e
@@ -101,9 +101,11 @@
                 </div>
             </div>
         </div>
-        <div class="rodape__texto--posicao">
-            <p class="rodape__texto rodape__texto--direita">Desenvolvido por Alura. Projeto fictício sem fins
-                comerciais.</p>
+        <div>
+            <p class="rodape__texto rodape__texto--direita">Desenvolvido por <a
+                    href="https://github.com/JoyceHeinze">Joyce
+                    Heinze</a>. Design por Alura.</p>
+            <p class="rodape__texto rodape__texto--direita">Projeto fictício sem fins comerciais.</p>
         </div>
     </footer>
 </body>

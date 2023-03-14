@@ -13,33 +13,13 @@
     padding-bottom: 1.5rem;
 }
 
-.bandas__titulo::before {
-    content: "/";
-}
-
-.bandas__titulo::after {
-    content: "/";
-}
-
 .bandas__data {
-    padding: 1rem;
-}
-
-.bandas__data,
-.bandas__data--marcador {
     font-size: 2rem;
     font-family: var(--font-titulo);
     color: var(--cor-fonte-branco);
     background: var(--cor-tarja);
     white-space: nowrap;
-}
-
-.bandas__data--marcador::before {
-    content: " < ";
-}
-
-.bandas__data--marcador::after {
-    content: " > ";
+    padding: 1rem;
 }
 
 .bandas__lista,
@@ -82,9 +62,10 @@
 }
 
 .bandas__imagem {
-    background-image: url('../assets/img/home/publico2.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../assets/img/home/publico2.jfif');
+    background-size: cover;
+    mix-blend-mode: multiply;
+    background-position-x: center;
     width: 100vw;
     min-height: 338px;
 }
@@ -107,8 +88,7 @@
         width: 10vw;
     }
 
-    .bandas__data,
-    .bandas__data--marcador {
+    .bandas__data {
         font-size: 3rem;
     }
 
@@ -128,7 +108,7 @@
     }
 
     .bandas__imagem {
-        background-image: url('../assets/img/home/publico2_tablet.png');
+        background-position-y: -150px;
     }
 }
 
@@ -138,6 +118,6 @@
     }
 
     .bandas__imagem {
-        background-image: url('../assets/img/home/publico2_desktop.png');
+        background-position-y: -220px;
     }
 }
