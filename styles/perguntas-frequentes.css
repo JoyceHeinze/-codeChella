@@ -29,10 +29,15 @@
     text-align: start;
     padding: 1rem;
     border: none;
+    cursor: pointer;
 }
 
 .perguntas-frequentes__botao::after {
     content: url('../assets/img/informacoes-gerais/arrow_drop_down.svg');
+}
+
+.perguntas-frequentes__lista--item {
+    list-style: none;
 }
 
 .perguntas-frequentes__resposta, .perguntas-frequentes__lista {
@@ -45,8 +50,8 @@
     display: none;
 }
 
-.perguntas-frequentes__lista--item {
-    list-style: none;
+.perguntas-frequentes__botao.active~.perguntas-frequentes__resposta { 
+    display: block;
 }
 
 @media (min-width: 768px) {
