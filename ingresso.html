@@ -34,7 +34,7 @@
                         class="cabecalho__link">Mapa de Setores</li></a>
                 <li class="cabecalho__lista-item cabecalho__lista--linha"><a href="informacoes-gerais.html"
                         class="cabecalho__link">Informações</li></a>
-                <li class="cabecalho__lista-item"><a href="ingresso.html" class="cabecalho__link">Ingresso</li></a>
+                <li class="cabecalho__lista-item link__ingresso"><a href="ingresso.html" class="cabecalho__link">Ingresso</li></a>
             </ul>
         </nav>
     </header>
@@ -44,57 +44,70 @@
             <span class="banner__imagem banner__imagem--ingresso"></span>
             <h1 class="banner__titulo">Garanta seu Ingresso</h1>
         </div>
-        <div class="fundo">
-            <form class="formulario">
-                <legend class="formulario__titulo">Preencha o formulário a seguir:</legend>
-                <label for="nome-completo" class="formulario__descricao">Nome completo:</label>
-                <input type="text" id="nome-completo" class="formulario__area-resposta"
-                    placeholder="Nome sem abreviações">
-                <label for="email" class="formulario__descricao">E-mail:</label>
-                <input type="email" id="email" class="formulario__area-resposta" placeholder="exemplo@provedor.com">
-                <fieldset class="formulario--divisao">
-                    <fieldset class="formulario--divisao-interno">
-                        <legend class="formulario__descricao formulario__descricao--divisao formulario__descricao--dupla">Tipo de Ingresso:</legend>
-                        <select class="formulario__area-resposta formulario__area-resposta--selecao formulario__descricao--dupla">
-                            <option>Tipo de Ingresso</option>
-                            <option>Pista Premium</option>
-                            <option>Pista Comum</option>
-                            <option>Cadeiras Térreo</option>
-                            <option>Cadeiras Superiores</option>
-                            <option>Rampas</option>
-                        </select>
-                    </fieldset>
-                    <fieldset class="formulario--divisao-interno">
-                        <label for="data-nascimento" class="formulario__descricao formulario__descricao--dupla">Data de nascimento:</label>
-                        <input type="date" id="data-nascimento"
-                            class="formulario__area-resposta formulario__area-resposta-data formulario__descricao--dupla">
-                    </fieldset>
+        <form class="formulario">
+            <!-- action="/ingresso-comprado.html" method="post" -->
+            <legend class="formulario__titulo">Preencha o formulário a seguir:</legend>
+            <label for="nome-completo" class="formulario__descricao">Nome completo:</label>
+            <input type="text" id="nome-completo" class="formulario__area-resposta" placeholder="Nome sem abreviações"
+                required minlength="8">
+            <label for="email" class="formulario__descricao">E-mail:</label>
+            <input type="email" id="email" class="formulario__area-resposta" placeholder="exemplo@provedor.com"
+                required>
+            <fieldset class="formulario--divisao">
+                <fieldset class="formulario--divisao-interno">
+                    <label for="selecao"></label>
+                    <legend id="selecao"
+                        class="formulario__descricao formulario__descricao--divisao formulario__descricao--dupla">Tipo
+                        de Ingresso:</legend>
+                    <select required
+                        class="formulario__area-resposta formulario__area-resposta--selecao formulario__descricao--dupla"
+                        name="selecao-ingresso">
+                        <option value="">Tipo de Ingresso</option>
+                        <option value="Pista Premium">Pista Premium</option>
+                        <option value="Pista Comum">Pista Comum</option>
+                        <option value="Cadeiras Térreo">Cadeiras Térreo</option>
+                        <option value="Cadeiras Superiores">Cadeiras Superiores</option>
+                        <option value="Rampas">Rampas</option>
+                    </select>
                 </fieldset>
-                <a href=ingresso-comprado.html class="formulario__botao">Avançar</a>
-            </form>
-        </div>
+                <fieldset class="formulario--divisao-interno">
+                    <label for="data-nascimento" class="formulario__descricao formulario__descricao--dupla">Data de
+                        nascimento:</label>
+                    <input type="date" id="data-nascimento"
+                        class="formulario__area-resposta formulario__area-resposta-data formulario__descricao--dupla"
+                        required>
+                </fieldset>
+            </fieldset>
+            <input type="submit" value="Avançar" class="formulario__botao">
+        </form>
     </main>
 
     <footer class="rodape">
         <div class="rodape__logo--redes">
             <img src="assets/img/logo_preta.svg" class="rodape__logo" alt="Logotipo do CodeChella">
             <div class="rodape__texto--redes">
-                <h4 class="rodape__texto">Acesse nossas redes:</h4>
+                <h4 class="rodape__texto rodape__texto-redes">Acesse nossas redes:</h4>
                 <div class="rodape__redes">
-                    <a href="#" class="rodape__redes--botao"><img src="assets/img/whatsapp.svg" alt="Whatsapp"></a>
-                    <a href="#" class="rodape__redes--botao"><img src="assets/img/mensagem.svg" alt="Mensagem"></a>
-                    <a href="#" class="rodape__redes--botao"><img src="assets/img/instagram.svg" alt="Instragram"></a>
-                    <a href="#" class="rodape__redes--botao"><img src="assets/img/twitter.svg" alt="Twitter"></a>
+                    <a href="#" class="rodape__redes--botao"><i class="fa-brands fa-whatsapp fa-2x"
+                            style="color: #444444;" alt="Whatsapp"></i></a>
+                    <a href="#" class="rodape__redes--botao"><i class="fa-brands fa-twitch fa-2x"
+                            style="color: #444444;" alt="Twitch"></i></a>
+                    <a href="#" class="rodape__redes--botao"><i class="fa-brands fa-instagram fa-2x"
+                            style="color: #444444;" alt="Instragram"></i></a>
+                    <a href="#" class="rodape__redes--botao"><i class="fa-brands fa-twitter fa-2x"
+                            style="color: #444444;" alt="Twitter"></i></a>
                 </div>
             </div>
         </div>
         <div>
             <p class="rodape__texto rodape__texto--direita">Desenvolvido por <a
                     href="https://github.com/JoyceHeinze">Joyce
-                    Heinze</a>. Design por Alura.</p>
+                    Heinze. </a>Design por Alura.</p>
             <p class="rodape__texto rodape__texto--direita">Projeto fictício sem fins comerciais.</p>
         </div>
     </footer>
+    <script src="js/ingresso.js"></script>
+    <script src="https://kit.fontawesome.com/36dfecbb43.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

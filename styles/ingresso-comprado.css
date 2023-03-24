@@ -1,15 +1,10 @@
-.fundo {
-    background: var(--cor-gradiente);
-    padding-bottom: 3rem;
-}
-
 .card__ingresso-comprado {
     background: var(--cor-gradiente);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 70%;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 2rem 1.5rem;
     row-gap: 2rem;
     border: none;
@@ -21,7 +16,7 @@
     font-weight: 700;
     line-height: 37.57px;
     text-align: center;
-    padding: 4rem 1.5rem
+    padding: 2rem 1.5rem 0;
 }
 
 .card-ingresso-comprado__titulo {
@@ -81,7 +76,6 @@
 @media (min-width:1440px) {  
     .ingresso-comprado__titulo, .card__ingresso-comprado {
         width: 50%;
-        margin: 0 auto;
     }
     
     .card__qr-code--texto {

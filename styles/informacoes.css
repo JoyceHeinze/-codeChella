@@ -1,7 +1,3 @@
-.fundo {
-    background: var(--cor-gradiente);
-}
-
 .informacoes {
     display: flex;
     flex-direction: column;
@@ -198,7 +194,7 @@
     .informacoes__descricao--experiencia,
     .informacoes__descricao--experiencia-esquerda {
         width: 648px;
-    }
+    } */
 
     /* SETORES */
     .setores--imagem-informacoes {

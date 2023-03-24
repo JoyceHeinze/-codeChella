@@ -18,3 +18,7 @@
     font-family: var(--font-texto);
     font-weight: 400;
 }
+
+body {
+    background: var(--cor-gradiente);
+}

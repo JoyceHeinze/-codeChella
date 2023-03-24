@@ -82,6 +82,10 @@
         border-bottom: none;
         padding-bottom: 0;
     }
+
+    .link__experiencia, .link__setores, .link__perguntas, .link__ingresso {
+        text-decoration: underline;
+    }
 }
 
 @media (min-width: 1440px) {

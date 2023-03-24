@@ -24,10 +24,21 @@
     text-align: center;
 }
 
+.rodape__texto-redes {
+    display: flex;
+    justify-content: center;
+}
+
 .rodape__redes {
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: 0.3rem;
+}
+
+.rodape__texto a {
+    text-decoration: none;
+    color: var(--cor-principal);
 }
 
 @media (min-width:768px) {
@@ -39,6 +50,10 @@
         display: flex;
         justify-content: center;
         gap: 1rem;
+    }
+
+    .rodape__texto-redes {
+        align-items: center;
     }
 
     .rodape__redes--botao {
@@ -53,12 +68,23 @@
         padding: 3.5rem 3rem;
     }
 
+    .rodape__logo {
+        width: 70%;
+        position: relative;
+        left: 7%;
+        padding: 0;
+    }
+
     .rodape__logo--redes {
         align-items: flex-end;
     }
 
     .rodape__texto--direita {
+        display: flex;
+        flex-wrap: wrap;
         width: 350px;
         padding-right: 4rem;
+        text-align: start;
+
     }
 }
